@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="http://localhost:8888/mb/rss.xml">
+  <channel>
+    <title>Liceo Bagatta - Dal 1792 a Desenzano del Garda</title>
+    <link>http://localhost:8888/mb/rss.xml</link>
+    <description/>
+    <language>en</language>
+    
+    
+  </channel>
+</rss>
