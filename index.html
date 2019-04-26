@@ -1,163 +1,44 @@
-<!DOCTYPE html>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1">
-<title>leeoocca</title>
-<style>
-body {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOTYu%0D%0ANzEgNTQwLjE4Ij48ZGVmcz48c3R5bGU+LmI3ODcwZWE1LWMzNTMtNDEzNS1iYWJjLTg1NzhhNWVk%0D%0AOTMyZXtmaWxsOiNhNWE1YTU7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5SaXNvcnNhIDE8L3RpdGxl%0D%0APjxnIGlkPSJmYTAxZmNhNC0zOGNmLTQ5NWMtODEzNi1jMWMxMThjNTJiZTciIGRhdGEtbmFtZT0i%0D%0ATGl2ZWxsbyAyIj48ZyBpZD0iYjAxMmY3MDItMjhmOC00OTVhLWFiMjAtNmRjMTQxMjE1MmI4IiBk%0D%0AYXRhLW5hbWU9IkxpdmVsbG8gMiI+PHBhdGggY2xhc3M9ImI3ODcwZWE1LWMzNTMtNDEzNS1iYWJj%0D%0ALTg1NzhhNWVkOTMyZSIgZD0iTTMwOCwxNC4xOGMtMS40MiwzLjU3LTQuOCw0LjktOC4wNiwyQzI4%0D%0AMy42NCwxLjkxLDI1Ni40OS0yLjI3LDIzNCwxLjFjLTUuMTguNzgtOC42LDYuNTEtMTMuOCw2LjM2%0D%0AQzIwMi42NSw2Ljk0LDE3OS43OCw0LDE2Myw3LjE5Yy02Ljg5LDEuMy0xMy4zNywxMS4xMy0yMC4z%0D%0ANiwxNC4wNy01LjA4LDIuMTQtMTEsMC0xNi4xOCwxLjY5QzExMy43MywyNy4xMSwxMDQuMjQsMzQs%0D%0AOTIuNjMsMzkuMjUsODIuMTcsNDQsNjguOTQsNDIsNTguNTYsNDcuMWMtMTAuNjQsNS4yMS04LjQ1%0D%0ALDE0LjgzLTE0LDIyLjQzLTIuODksNC04LjczLDEuNDMtMTEuODEsNS4yM0MxNS4zMSw5Ni4yOCww%0D%0ALDEyOS43OCwwLDE1OC4xOGMwLDcuOTEsMi4yOCwzMS4wNiwxNSwzMC44LDMtLjA2LDcuMjYtNS44%0D%0ANywxMS02LjgtNS42OSwyMy4zMiwyNS42OS0xMC41LDI3LjEyLTcuNSwyLjM4LDUtNC40NiwyNC45%0D%0AMy01LDMxLjU3LTEuMSwxMy42MSwxMSwyMy42LDcuMTEsMzguNi0zLjM2LDEyLjg1LTExLjcsMjku%0D%0AMjItMTguMjYsNDAuOS0zLjIyLDUuNzUtOS44Myw5LjIzLTEwLjQ4LDE2LjU2LTEuMTksMTMuNTks%0D%0AMjAuNzcsMTMuMDYsMjUsMjIuMDUsMi44NSw2LjEyLDEuMjEsMTMuMDgsNCwxOSwyLjE4LDQuNTMs%0D%0AOC4xOCw0LjU2LDkuODIsOS4xM1M2My4xNCwzNjEuMyw2NSwzNjUuNmMyLjg3LDYuNTMsOS44Niwx%0D%0AMC43NCwxMi4xNSwxNy45MiwzLjUxLDExLS4xNCwyNC4yLDYuMjMsMzQuODMsMTguMTgsMzAuMzIs%0D%0ANTEuNC4xMyw3NC4zMSw4LjUxLDcuODMsMi44Nyw2LjkzLDE4LjIzLDExLDI0LjgyQzE4OC40Myw0%0D%0AODMuMiwyMDAuNDgsNTAyLDE5NCw1NDAuMThjMTIuNDYtNi45MywyMC42Ni0yMS4zMSwzMS43OC0z%0D%0AMC4xNmE0NTYuMTgsNDU2LjE4LDAsMCwxLDgwLjYyLTUwLjg0YzEyLjUxLTYuMjYsNDcuMDctMTIu%0D%0ANDEsNTQuMjktMjQsLjk1LTEuNTItMTYuMy0yMS4xNi0xOC41NC0yNS0xMi44Ni0yMi4xNC0yMC43%0D%0ANy00OC42My0xNS43OS03NC45czMxLjQ0LTQ2LjYzLDQwLjUyLTcwLjc4YzEwLjM4LTI3LjU3LDI1%0D%0ALjE4LTYwLDI4LjkxLTg5LjQ5QzQwMC45MSwxMzQuNSwzODMuOTMsOTgsMzY0LjMxLDY0LjEzLDM1%0D%0ANy44NCw1MywzNTMuNjEsMzcuMjcsMzQyLjksMjguNzQsMzM2LjA3LDIzLjMsMzE3LDE4LDMwOCwx%0D%0ANC4xOCIvPjwvZz48L2c+PC9zdmc+);
-  background-size: 60vw;
-  background-position: center right -31vw;
-  background-repeat: no-repeat;
-}
-@font-face {
-  font-family:'NonBreakingSpaceOverride';
-  src:url(data:application/font-woff2; charset=utf-8; base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format("woff2")}
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  font-size: 22px;
-  box-sizing: border-box
-}
-a{background-color:transparent}
-a{text-decoration:none}
-a:hover{text-decoration:none}
-a:focus{text-decoration:underline}
-a:hover,a:active{color:#005177;outline:0;text-decoration:none}
-a:focus{outline:thin;outline-style:dotted;text-decoration:underline}
-::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
-body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#111;font-family:"NonBreakingSpaceOverride","Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;font-weight:400;font-size:1em;line-height:1.8;margin:0;text-rendering:optimizeLegibility}.site-title,.site-info,h3{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif}.site-title,h3{font-weight:700;letter-spacing:-0.02em;line-height:1.2;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.site-branding{line-height:1.25}
-h3{font-size:1.6875em}
-.site-title{
-  font-size: 1.75em
-}
-.site-description{font-size:1.125em}
-.site-title{font-weight:300}
-p{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-::selection{background-color:#bfdcea}
-*,*:before,*:after{box-sizing:inherit}
-body{background-color:#fff}
-h3{clear:both}
-ul{padding-left:1rem}
-ul{list-style:disc}
-li{line-height:1.8}
-a {
-  transition:color 110ms ease-in-out;
-  color:#0073aa
-}
-a:visited{color:#0073aa}
-a:hover,a:active{color:#005177;outline:0;text-decoration:none}
-a:focus{outline:thin dotted;text-decoration:underline}
-@keyframes slide_in_right{100%{transform:translateX(0)}}
-@keyframes fade_in{from{opacity:0}to{opacity:1}}
-.screen-reader-text {
-  border:0;
-  clip:rect(1px,1px,1px,1px);
-  clip-path:inset(50%);
-  height:1px;
-  margin:-1px;
-  overflow:hidden;
-  padding:0;
-  position:absolute!important;
-  width:1px;
-  word-wrap:normal!important
-  }
-.screen-reader-text:focus {
-  background-color:#f1f1f1;
-  border-radius:3px;
-  box-shadow:0 0 2px 2px rgba(0,0,0,0.6);
-  clip:auto!important;
-  clip-path:none;
-  color:#21759b;
-  display:block;
-  font-size:14px;
-  font-size:.875rem;
-  font-weight:bold;
-  height:auto;
-  left:5px;
-  line-height:normal;
-  padding:15px 23px 14px;
-  text-decoration:none;
-  top:5px;
-  width:auto;
-  z-index:100000
-}
-.clear:before,.clear:after,.entry-content:before,.entry-content:after,.comment-content:before,.comment-content:after,.site-header:before,.site-header:after,.site-content:before,.site-content:after,.site-footer:before,.site-footer:after{content:"";display:table;table-layout:fixed}
-.clear:after,.entry-content:after,.comment-content:after,.site-header:after,.site-content:after,.site-footer:after{clear:both}#page{width:100%}
-.site-content{overflow:hidden}
-.site-header{padding:1em}
-@media only screen and (min-width:768px){.site-header{margin:0;padding:3rem 0}}
-.site-branding{color:#767676;position:relative}
-@media only screen and (min-width:768px){.site-branding{margin:0 calc(10% + 60px)}}
-.site-title{margin:auto;color:#111}
-.site-title a{color:#111}
-.site-title a:link,.site-title a:visited{color:#111}
-.site-title a:hover{color:#4a4a4a}
-@media only screen and (min-width:768px){.site-title{display:inline}}
-/*--- .site-title:not(:empty)+.site-description:not(:empty):before{content:"\2014";margin:0 .2em} ---*/
-.site-description{color:#767676;font-weight:normal;margin:0}
-@supports (object-fit:cover){.site-header.featured-image .site-featured-image .post-thumbnail img{height:100%;left:0;object-fit:cover;top:0;transform:none;width:100%}}
-@supports (mix-blend-mode:multiply){.image-filters-enabled .site-header.featured-image .site-featured-image:after{opacity:1}}
-@supports (mix-blend-mode:overlay){.image-filters-enabled .site-header.featured-image .site-branding-container:after{background:rgba(255,255,255,0.35)}}
-.entry{margin-top:calc(6 * 1rem)}
-.entry:first-of-type{margin-top:0}
-.entry .entry-header{margin:calc(3 * 1rem) 1rem 1rem;position:relative}
-@media only screen and (min-width:768px){.entry .entry-header{margin:calc(3 * 1rem) calc(10% + 60px) 1rem}}
-@supports (mix-blend-mode:multiply){.image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner:after{display:none}}
-@supports (mix-blend-mode:multiply){.image-filters-enabled .entry .post-thumbnail:after{opacity:1}}.entry .entry-content{max-width:calc(100% - (2 * 1rem));margin:0 1rem}
-@media only screen and (min-width:768px){.entry .entry-content{max-width:80%;margin:0 10%;padding:0 60px}}
-#colophon .widget-area,#colophon .site-info{margin:calc(2 * 1rem) 1rem}
-@media only screen and (min-width:768px){#colophon .widget-area,#colophon .site-info{margin:calc(3 * 1rem) calc(10% + 60px)}}
-#colophon .widget-column{display:flex;flex-wrap:wrap}
-#colophon .widget-column .widget{width:100%}
-@media only screen and (min-width:1168px){#colophon .widget-column .widget{margin-right:calc(3 * 1rem);width:calc(50% - (3 * 1rem))}}
-.widget{margin:0 0 1rem}
-.widget a{color:#0073aa}
-.widget a:hover{color:#005177}
-.widget_nav_menu ul{padding:0;list-style:none}
-.widget_nav_menu ul li{color:#767676;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-size:calc(22px * 1.125);font-weight:700;line-height:1.2;margin-top:.5rem;margin-bottom:.5rem}
-.entry .entry-content>*{margin:32px 0;max-width:100%}
-@media only screen and (min-width:768px){.entry .entry-content>*{max-width:calc(8 * (100vw / 12) - 28px)}}
-@media only screen and (min-width:1168px){.entry .entry-content>*{max-width:calc(6 * (100vw / 12) - 28px)}}
-@media only screen and (min-width:768px){.entry .entry-content>*{margin:32px 0}}.entry .entry-content>*>*:first-child,.entry .entry-summary>*>*:first-child{margin-top:0}.entry .entry-content>*>*:last-child,.entry .entry-summary>*>*:last-child{margin-bottom:0}
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Ciao!">
+  <meta name="author" content="leeoocca">
+  <link rel="icon" href="https://www.pixilart.com/images/art/34195bc304a46e6.png?v=1543967437">
+
+  <title>leeoocca</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="leeoocca.css" rel="stylesheet">
 </head>
-<body class="home page-template-default page page-id-2 wp-embed-responsive singular image-filters-enabled">
-  <div id=page class=site>
-    <header id=masthead class=site-header>
-      <div class=site-branding-container>
-        <div class=site-branding>
-          <p class=site-title><a href="/">leeoocca</a></p>
-          <p class=site-description> young creative </p>
-        </div>
-      </div>
-    </header>
-    <div id=content class=site-content>
-      <section id=primary class=content-area>
-        <main id=main class=site-main>
 
-          <article id=post-2 class="post-2 page type-page status-publish hentry entry">
-            <header class=entry-header>
+<body>
 
-            </header>
+  <!-- Begin page content -->
+  <main role="main" class="container">
 
-            <div class=entry-content>
+    <h1 class="mt-5"><small>🍒</small> leeoocca</h1>
 
-              <h3>Creative Projects</h3>
-              <ul><li>Photography<li>Videography<li>Web &amp; Graphic Design</ul>
-              </div>
-            </article>
-          </main>
-        </section>
-      </div>
-      <footer id=colophon class=site-footer>
+    <h1 class="display-4 mt-5">Ciao!</h1>
 
-        <aside class=widget-area role=complementary aria-label=Footer>
-          <div class="widget-column footer-widget-1">
-            <section id=nav_menu-3 class="widget widget_nav_menu"><div class=menu-menu-container><ul id=menu-menu class=menu><li id=menu-item-15 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a target=_blank href=https://goo.gl/forms/Par6go4DpKWLYNtv1>request files</a></li>
-              <li id=menu-item-16 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href=mailto:leeoocca@gmail.com>contact me</a></li>
-            </ul></div></section> </div>
-          </aside>
-        </footer>
-      </div>
-    </body>
+    <p class="lead">I'm a <i class="text-danger">young creative</i> based in Northern Italy.</p>
+    <p class="lead">I'm keen on taking <a href="http://instagram.com/leo.rocca" class="text-danger">pictures</a>, shooting <a href="https://www.youtube.com/playlist?list=PLtq5b5tSrbeGArYtIuvkKxoH6tuwAXSPs" class="text-danger">movies</a>, developing websites, and designing graphics.</p>
+
+    <hr class="my-4">
+
+    <p>You can reach me clicking the button below.</p>
+    <a class="btn btn-outline-danger" href="mailto:leeoocca+ml@gmail.com" role="button">Send me an email</a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">leeoocca.ml</span>
+    </div>
+  </footer>
+</body>
+</html>
